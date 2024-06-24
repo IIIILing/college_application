@@ -4,9 +4,67 @@ nav:
   - 提问的艺术: 提问的艺术.md
   - 怎么了解专业: 怎么了解专业.md
   - 学习资源: 资源.md
-  - 报考指南: 报考指南.md
-  - 专业介绍: 专业介绍.md
+  - 浙江大学专业分流和转专业指南: 转专业指南.md
   - 专业就业: 专业就业.md
   - 专业前景: 专业前景.md
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - navigation.bottom
+    - toc.integrate
+    - content.code.copy
+    - content.code.link
+    - content.code.highlight
+    - content.math
+    - search.full
+    - search.share   #搜索分享按钮
+    - navigation.tabs   # 左侧目录显示为Tab样式
+    - navigation.sections   # 左侧目录显示为Sections样式
+markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - md_in_html
+  # - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+
+  - pymdownx.arithmatex: # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - markdown.extensions.toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: "\ue157"
+

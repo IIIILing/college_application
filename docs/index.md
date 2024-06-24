@@ -1,17 +1,19 @@
-# Welcome to MkDocs
+# 高考志愿填报ICU版
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 什么人适合看
 
-## Commands
+不知道以后要干什么，不知道自己喜欢什么，出分了才发现自己还没选好专业的人
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 看完你可以获得什么
 
-## Project layout
+1. 基础的避雷能力
+2. 基本了解专业学习内容的能力
+3. 一部分鉴别社交媒体话术和骗局的能力
+4. 对浙江大学一定的怯魅
+5. 一些适合你学习的资料[针对工科]
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 你不会获得什么
+
+1. 具体的专业报考指导
+2. 任何专业的推广
+3. 任何话术，任何骗局，任何广告
